@@ -1,4 +1,16 @@
-#To find largest element in an array
+"""
+Problem: Largest Element in an Array
+
+Approach:
+- Maintain the largest element seen so far.
+- Traverse the array once.
+- Update the largest value whenever a bigger element is found.
+
+Time Complexity: O(n)
+Space Complexity: O(1)
+
+Author: Reshma Thomas
+"""
 def find_largest(arr):
     if len(arr) == 0:
         return None  # Return None for empty array
@@ -10,7 +22,3 @@ def find_largest(arr):
 answer = find_largest([3, 5, 2, 8, 1])
 print(answer)
 
-#len(array) is used to find the length of an array. It returns the number of elements in the array. For example, len([3, 5, 2, 8, 1]) would return 5, since there are 5 elements in the array.
-#every element is compared with current largest element.
-#Follows O[n] time complexity, where n is the number of elements in the array.
-#O(1)space complexity as we are using only a single variable to store the largest element.
