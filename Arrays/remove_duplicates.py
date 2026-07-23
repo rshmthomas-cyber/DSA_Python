@@ -15,8 +15,6 @@ def remove_duplicates(arr):
         if arr[i] != arr[j]:
             arr[i+1] = arr[j]
             i+=1
-        else:
-            continue
     return i+1 
 
 
